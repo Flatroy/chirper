@@ -17,6 +17,10 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    public function chirps()
+    {
+        return $this->hasMany(Chirp::class);
+    }
     protected $fillable = [
         'name',
         'email',
