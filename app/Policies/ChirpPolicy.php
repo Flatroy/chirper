@@ -65,7 +65,7 @@ class ChirpPolicy
      */
     public function delete(User $user, Chirp $chirp)
     {
-        //
+        return $this->update($user, $chirp);
     }
 
     /**
@@ -77,7 +77,7 @@ class ChirpPolicy
      */
     public function restore(User $user, Chirp $chirp)
     {
-        //
+
     }
 
     /**
